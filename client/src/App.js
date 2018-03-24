@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Transition } from "semantic-ui-react";
-import { NavBar, Banner, Slogan, CardContent, Util } from "./components";
+import { NavBar, Banner, Slogan, CardContent, Idealogy, WhatWeDo, Form, Util } from "./components";
 import { Helper } from "./util";
 
 class App extends Component {
@@ -27,11 +27,14 @@ class App extends Component {
       <div className="App">
         <Banner />
         <Slogan />
+        <Idealogy />
         {/* <Transition visible={isOriginal} duration={800}
           animation="fade up">
           <NavBar/>
         </Transition> */}
         <CardContent />
+        <WhatWeDo />
+        <Form />
         <Util.Gap size="5rem"/>
       </div>
     );

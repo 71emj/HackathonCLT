@@ -12,10 +12,10 @@ const Slogan = props => {
       <Header as="h1" style={style}>
         <Header.Content style={{ display: "block" }}>
           <Header.Subheader style={{ fontSize: "21px" }}>
-            WE AREN'T SO DIFFERENT
+            AND WE ARE TRYING TO HELP
           </Header.Subheader>
         </Header.Content>
-        TELL YOUR STORY
+        WHO WE ARE
       </Header>
       <div style={{ width: "7.5rem", margin: "auto" }}>
         <Divider></Divider>
