@@ -1,12 +1,10 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import { Container, Menu, Dropdown, Icon } from "semantic-ui-react";
-// import { Helpers } from "../util";
 
 const Navbar = props => {
-  const { pathname } = props.location;
   const borderLess = {
-    borderRadius: "0"
+    borderRadius: "0",
+    background: "#96C0CE"
   };
   const top = {
     top: "2rem"
@@ -17,20 +15,13 @@ const Navbar = props => {
     { key: "category", text: "Categories", value: "category", icon: "unordered list" }
   ];
   return (
-    <Menu inverted compact borderless fixed="top" style={borderLess} color="violet">
+    <Menu inverted compact borderless fixed="bottom" style={borderLess} color="black">
       <Container>
-        <Link to="/" children={
-          <Menu.Item link header as="h3" name="MyReads" />} />
+        <a href="/" children={<Menu.Item link header as="h3" name="LOGO" />} />
         <Menu.Menu position="right">
-          {pathname.match(/\//g).length > 1 &&
-            <Menu.Item link float="right">
-              <Icon name="dashboard" />
-              <Link to="/">Dashboard</Link>
-            </Menu.Item>
-          }
           <Menu.Item link>
-            <Icon name="pencil" />
-            <a href="/">Link</a>
+            <Icon name="home" />
+            <a href="/">Home</a>
           </Menu.Item>
           <Menu.Item link>
             <Icon name="filter" />
