@@ -17,11 +17,11 @@ const Footer = props => {
   };
 
   return (
-    <Grid center style={style}>
+    <Grid centered style={style}>
       <Container text style={footerStyle} textAlign="center">
         <Grid.Column>
           <Header as="h1">
-            MORE ABOUT US
+            More About Elevate
           </Header>
           <List bulleted horizontal link>
             <List.Item as='a'>Terms and Conditions</List.Item>

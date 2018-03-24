@@ -15,3 +15,18 @@ body {
 .fullMask {
   background: "black";
 }
+
+.progress {
+  display: inline-block;
+  height: 3px;
+  width: 40rem;
+  background: black;
+}
+
+._node:hover {
+  background: #6601f;
+}
+
+._node {
+  height: 100px;
+}

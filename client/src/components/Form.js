@@ -22,23 +22,33 @@ const CustomForm = props => {
           <Grid.Column style={{ padding: "0", boxSizing: "border-box" }}>
             <div style={{ ...style, background: "#7118f9" }}>
               <Header as="h1" style={headerStyle}>
-                Find your local home
+                Find Participating properties
               </Header>
-              <h3>Find a Habitat near you to volunteer, shop at a Habitat ReStore and more.</h3>
+              <h3>Search availability in your area.</h3>
               <Gap size="1vw"/>
-              <Input action='Search' placeholder='Search...' />
+              <Input action='Go' placeholder='Zip...' />
             </div>
             <div style={style}>
               <Header as="h1" style={headerStyle}>
                 Find out how you can help
               </Header>
               <h3>Families who partner with us build their own homes alongside volunteers, pay an affordable mortgage and are grateful for your help.</h3>
-              <Gap size="0.75vw"/>
+              <Gap size="0.5vw"/>
               <Input action={{ icon: "dollar" }} placeholder='Donate...' />
             </div>
           </Grid.Column>
           <Grid.Column style={{ padding: "0", overflow: "hidden" }}>
-            <Image fluid style={{ maxWidth: "none", width: "105%" }} src='https://78.media.tumblr.com/231f33dbfde5d6ed619b9518536d31e8/tumblr_p60tgflmaJ1qggwnvo1_1280.jpg' wrapped />
+            {/* <Image fluid style={{ maxWidth: "none", width: "auto", height: "100%" }} src='assets/media/property.jpg' wrapped /> */}
+            <div style={{
+              background: "url('assets/media/property.jpg')",
+              backgroundSize: "cover",
+              backgroundPosition: "80% center",
+              backgroundRepeat: "no-repeat",
+              display: "block",
+              height: "100%",
+              width: "100%",
+              overflow: "hidden"
+            }}></div>
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
@@ -48,11 +58,11 @@ const CustomForm = props => {
           <Grid.Column style={{ padding: "0" }}>
             <div style={{ ...style, height: "100%", background: "#6601ff"}}>
               <Header as="h1" style={headerStyle}>
-                Find out how you can help
+                Sign up and start helping
               </Header>
               <h3>Families who partner with us build their own homes alongside volunteers, pay an affordable mortgage and are grateful for your help.</h3>
               <Gap size="0.75vw"/>
-              <Input action={{ icon: "dollar" }} placeholder='Donate...' />
+              <Input action={{ icon: "at" }} placeholder='Your email...' />
             </div>
           </Grid.Column>
         </Grid.Row>

@@ -12,7 +12,7 @@ const Slogan = props => {
       <Header as="h1" style={style}>
         <Header.Content style={{ display: "block" }}>
           <Header.Subheader style={{ fontSize: "21px" }}>
-            AND WE ARE TRYING TO HELP
+            {/* AND WHAT WE DO */}
           </Header.Subheader>
         </Header.Content>
         WHO WE ARE

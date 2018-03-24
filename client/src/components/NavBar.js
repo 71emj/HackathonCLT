@@ -16,7 +16,7 @@ const Navbar = props => {
   return (
     <Menu inverted compact borderless fixed="bottom" style={borderLess} color="black">
       <Container>
-        <a href="/" children={<Menu.Item link header as="h2" name="LOGO" />} />
+        <a href="/" children={<Menu.Item link header as="h2" name="Elevate" />} />
         <Menu.Menu position="right">
           <Menu.Item link>
             <a href="/">Find A Home</a>

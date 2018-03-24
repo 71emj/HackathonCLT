@@ -4,11 +4,12 @@ import { Gap, Paragraph } from "./utilities";
 
 const Idealogy = props => {
   return (
-    <Container text textAlign="center">
+    <Container  textAlign="center">
       <Gap size="1rem"/>
-      <Paragraph>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic debitis facere recusandae earum iste modi, asperiores quisquam illum quae numquam, rem ducimus natus reiciendis. Reiciendis necessitatibus voluptatum excepturi laudantium quaerat.
+      <Paragraph size="2rem">
+        <strong><em>Elevate</em></strong> creates affordable housing agreements between providers and recepient that foster economic mobiltiy.
       </Paragraph>
+
     </Container>
   );
 }
