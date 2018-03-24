@@ -34,7 +34,7 @@ const CustomForm = props => {
               </Header>
               <h3>Families who partner with us build their own homes alongside volunteers, pay an affordable mortgage and are grateful for your help.</h3>
               <Gap size="0.75vw"/>
-              <Input action={{ icon: "dollar" }} placeholder='Search...' />
+              <Input action={{ icon: "dollar" }} placeholder='Donate...' />
             </div>
           </Grid.Column>
           <Grid.Column style={{ padding: "0" }}>
@@ -42,11 +42,16 @@ const CustomForm = props => {
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
-          Heelo
+          <Grid.Column style={{ padding: "0", maxHeight: "22.5rem", overflow: "hidden" }}>
+            <Image fluid style={{ maxWidth: "none", width: "105%" }} src='https://www.habitat.org/sites/default/files/styles/3_4_large/public/2018-01/promo-housinghelp-3.jpg?itok=PBqSth2x' wrapped />
+          </Grid.Column>
+          <Grid.Column></Grid.Column>
         </Grid.Row>
       </Grid>
     </Container>
   );
 };
+
+
 
 export default CustomForm;

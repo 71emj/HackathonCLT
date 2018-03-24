@@ -14,7 +14,7 @@ const Banner = props => {
   const segmentStyle = {
     position: "relative",
     padding: "1rem",
-    paddingRight: "2rem",
+    paddingRight: "2.25rem",
     width: "100vw",
     height: "100vh",
     border: "none",
