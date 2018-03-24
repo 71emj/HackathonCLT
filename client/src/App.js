@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Transition } from "semantic-ui-react";
-import { NavBar, Banner, Slogan, CardContent, Idealogy, WhatWeDo, Form, Util } from "./components";
+import { NavBar, Banner, Slogan, CardContent,
+  Idealogy, WhatWeDo, Form, Footer, Util } from "./components";
 import { Helper } from "./util";
 
 class App extends Component {
@@ -9,15 +9,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    const showNavbar = evt => {
-      if (window.scrollY > 0) {
-        console.log(window.scrollY);
-
-        return this.setState({ isOriginal: true });
-      }
-      // console.log(window.scrollY);
-      return this.setState({ isOriginal: false });
-    }
+    const showNavbar = evt => this.setState({ isOriginal: !!window.scrollY });
     window.document.addEventListener("scroll", Helper.throttle(showNavbar));
   }
 
@@ -28,14 +20,12 @@ class App extends Component {
         <Banner />
         <Slogan />
         <Idealogy />
-        {/* <Transition visible={isOriginal} duration={800}
-          animation="fade up">
-          <NavBar/>
-        </Transition> */}
+        <NavBar show={isOriginal}/>
         <CardContent />
         <WhatWeDo />
         <Form />
-        <Util.Gap size="5rem"/>
+        <Util.Gap size="10rem"/>
+        <Footer />
       </div>
     );
   }

@@ -37,7 +37,7 @@ const CustomForm = props => {
               <Input action={{ icon: "dollar" }} placeholder='Donate...' />
             </div>
           </Grid.Column>
-          <Grid.Column style={{ padding: "0" }}>
+          <Grid.Column style={{ padding: "0", overflow: "hidden" }}>
             <Image fluid style={{ maxWidth: "none", width: "105%" }} src='https://78.media.tumblr.com/231f33dbfde5d6ed619b9518536d31e8/tumblr_p60tgflmaJ1qggwnvo1_1280.jpg' wrapped />
           </Grid.Column>
         </Grid.Row>
@@ -45,7 +45,16 @@ const CustomForm = props => {
           <Grid.Column style={{ padding: "0", maxHeight: "22.5rem", overflow: "hidden" }}>
             <Image fluid style={{ maxWidth: "none", width: "105%" }} src='https://www.habitat.org/sites/default/files/styles/3_4_large/public/2018-01/promo-housinghelp-3.jpg?itok=PBqSth2x' wrapped />
           </Grid.Column>
-          <Grid.Column></Grid.Column>
+          <Grid.Column style={{ padding: "0" }}>
+            <div style={{ ...style, height: "100%", background: "#6601ff"}}>
+              <Header as="h1" style={headerStyle}>
+                Find out how you can help
+              </Header>
+              <h3>Families who partner with us build their own homes alongside volunteers, pay an affordable mortgage and are grateful for your help.</h3>
+              <Gap size="0.75vw"/>
+              <Input action={{ icon: "dollar" }} placeholder='Donate...' />
+            </div>
+          </Grid.Column>
         </Grid.Row>
       </Grid>
     </Container>

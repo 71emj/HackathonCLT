@@ -7,7 +7,8 @@ import Slogan from "./Slogan";
 import CardContent from "./Content";
 import Idealogy from "./Idealogy";
 import WhatWeDo from "./WhatWeDo";
+import Footer from "./Footer";
 import * as Util from "./utilities";
 
 
-export { NavBar, Banner, Slogan, Util, CardContent, Idealogy, WhatWeDo, Form };
+export { NavBar, Banner, Slogan, Util, CardContent, Idealogy, WhatWeDo, Form, Footer };

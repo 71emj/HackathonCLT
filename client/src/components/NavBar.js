@@ -3,35 +3,35 @@ import { Container, Menu, Dropdown, Icon } from "semantic-ui-react";
 
 const Navbar = props => {
   const borderLess = {
+    display: props.show ? "block" : "none",
     borderRadius: "0",
-    background: "#96C0CE"
+    background: "#4a00bb",
+    boxShadow: "0px 0px 30px rgba(0, 0, 0, 0.1)",
+    transition: "display ease-in 0.5s, box-shadow ease-in 0.3s"
   };
   const top = {
     top: "2rem"
   };
-  const options = [
-    { key: "time", text: "Time Posted", value: "time", icon: "clock" },
-    { key: "popularity", text: "Most Liked", value: "popularity", icon: "like" },
-    { key: "category", text: "Categories", value: "category", icon: "unordered list" }
-  ];
+
   return (
     <Menu inverted compact borderless fixed="bottom" style={borderLess} color="black">
       <Container>
-        <a href="/" children={<Menu.Item link header as="h3" name="LOGO" />} />
+        <a href="/" children={<Menu.Item link header as="h2" name="LOGO" />} />
         <Menu.Menu position="right">
           <Menu.Item link>
-            <Icon name="home" />
-            <a href="/">Home</a>
+            <a href="/">Find A Home</a>
           </Menu.Item>
           <Menu.Item link>
-            <Icon name="filter" />
-            <Dropdown text="Sort By">
-              <Dropdown.Menu style={{ ...borderLess, ...top }} defaultValue={options[0]}>
-                <Dropdown.Header>Sort Content</Dropdown.Header>
-                <Dropdown.Divider />
-                {options.map(option => <Dropdown.Item {...option}/> )}
-              </Dropdown.Menu>
-            </Dropdown>
+            <a href="/">Participate</a>
+          </Menu.Item>
+          <Menu.Item link>
+            <a href="/">Hear Their Story</a>
+          </Menu.Item>
+          <Menu.Item link>
+            <a href="/">Impact</a>
+          </Menu.Item>
+          <Menu.Item link>
+            <a href="/">About</a>
           </Menu.Item>
         </Menu.Menu>
       </Container>
