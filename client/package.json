@@ -12,7 +12,10 @@
     "semantic-ui-css": "^2.3.1",
     "semantic-ui-react": "^0.79.0"
   },
+  "homepage": "https://71emj.github.io/HackathonCLT/",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
