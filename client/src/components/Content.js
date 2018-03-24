@@ -17,9 +17,9 @@ const ContentCard = props => {
   };
 
   const content = [
-    { text: "Success Stories", background: "#7118f9", subText: "Hear from these people about their success" },
-    { text: "Report", background: "#6601ff", subText: "Read on about our latest accountabilty and outcome report" },
-    { text: "Workshop & Events", background: "#5809d0", subText: "Learn about our upcoming workshop and events" }
+    { text: "Success Stories", background: "#7118f9", subText: "Hear from people whose lives have been changed" },
+    { text: "Report", background: "#6601ff", subText: "Read latest accountability data" },
+    { text: "Workshop & Events", background: "#5809d0", subText: "See upcoming dates" }
   ];
 
   const contentStyle = {

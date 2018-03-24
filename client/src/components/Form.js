@@ -22,7 +22,7 @@ const CustomForm = props => {
           <Grid.Column style={{ padding: "0", boxSizing: "border-box" }}>
             <div style={{ ...style, background: "#7118f9" }}>
               <Header as="h1" style={headerStyle}>
-                Find Participating properties
+                Find participating properties
               </Header>
               <h3>Search availability in your area.</h3>
               <Gap size="1vw"/>
@@ -30,15 +30,14 @@ const CustomForm = props => {
             </div>
             <div style={style}>
               <Header as="h1" style={headerStyle}>
-                Find out how you can help
+                Interested property owners
               </Header>
-              <h3>Families who partner with us build their own homes alongside volunteers, pay an affordable mortgage and are grateful for your help.</h3>
+              <h3>Learn how you can become one of our property provider</h3>
               <Gap size="0.5vw"/>
-              <Input action={{ icon: "dollar" }} placeholder='Donate...' />
+              <Input action={{ icon: "home" }} placeholder='Join Us...' />
             </div>
           </Grid.Column>
           <Grid.Column style={{ padding: "0", overflow: "hidden" }}>
-            {/* <Image fluid style={{ maxWidth: "none", width: "auto", height: "100%" }} src='assets/media/property.jpg' wrapped /> */}
             <div style={{
               background: "url('assets/media/property.jpg')",
               backgroundSize: "cover",
@@ -58,9 +57,9 @@ const CustomForm = props => {
           <Grid.Column style={{ padding: "0" }}>
             <div style={{ ...style, height: "100%", background: "#6601ff"}}>
               <Header as="h1" style={headerStyle}>
-                Sign up and start helping
+                Sign up today and start making difference
               </Header>
-              <h3>Families who partner with us build their own homes alongside volunteers, pay an affordable mortgage and are grateful for your help.</h3>
+              <h3>Even if don't have a house to share you can always lend out your hands</h3>
               <Gap size="0.75vw"/>
               <Input action={{ icon: "at" }} placeholder='Your email...' />
             </div>

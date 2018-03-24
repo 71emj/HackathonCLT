@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Menu, Dropdown, Icon } from "semantic-ui-react";
+import { Container, Menu, Button, Icon } from "semantic-ui-react";
 
 const Navbar = props => {
   const borderLess = {
@@ -19,19 +19,25 @@ const Navbar = props => {
         <a href="/" children={<Menu.Item link header as="h2" name="Elevate" />} />
         <Menu.Menu position="right">
           <Menu.Item link>
-            <a href="/">Find A Home</a>
+            <a href="/">Find a home</a>
           </Menu.Item>
           <Menu.Item link>
             <a href="/">Participate</a>
           </Menu.Item>
           <Menu.Item link>
-            <a href="/">Hear Their Story</a>
+            <a href="/">Hear their stories</a>
           </Menu.Item>
           <Menu.Item link>
             <a href="/">Impact</a>
           </Menu.Item>
           <Menu.Item link>
             <a href="/">About</a>
+          </Menu.Item>
+          <Menu.Item link>
+            <Button>Login</Button>
+          </Menu.Item>
+          <Menu.Item link>
+            <Button>Register</Button>
           </Menu.Item>
         </Menu.Menu>
       </Container>

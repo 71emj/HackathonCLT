@@ -66,14 +66,27 @@ const WhatWeDo = props => {
           <Header>How Does It Work?</Header>
           <Gap size="1.5rem" />
           <div style={progress}>
-            <Icon className="_node" size="huge" name="circle outline" />
+            <Icon.Group>
+              <Icon size="big" name="angle right" />
+              <Icon size="huge" name="circle outline" />
+            </Icon.Group>
             <div className="progress" />
-            <Icon className="_node" size="huge" name="circle outline" />
+            <Icon.Group>
+              <Icon size="big" name="angle right"/>
+              <Icon size="huge" name="circle outline" />
+            </Icon.Group>
             <div className="progress" />
-            <Icon className="_node" size="huge" name="circle outline" />
+            <Icon.Group>
+              <Icon size="big" name="angle right"/>
+              <Icon size="huge" name="circle outline" />
+            </Icon.Group>
             <div className="progress" />
-            <Icon className="_node" size="huge" name="circle outline" />
+            <Icon.Group>
+              <Icon size="big" name="angle right"/>
+              <Icon size="huge" name="circle outline" />
+            </Icon.Group>
           </div>
+          <Gap size="0.75rem" />
           <Menu style={menuStyle} widths={3}>
             {content.map(({ title, body }) => (
               <Menu.Item key={title} style={{ display: "block", width: "14rem", padding: "0 2rem" }}>

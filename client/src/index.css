@@ -19,7 +19,7 @@ body {
 .progress {
   display: inline-block;
   height: 3px;
-  width: 40rem;
+  width: 20rem;
   background: black;
 }
 
@@ -27,6 +27,11 @@ body {
   background: #6601f;
 }
 
-._node {
-  height: 100px;
+.angle {
+  position: relative;
+  transition: position ease-in .5s;
+}
+
+.angle:hover {
+  left: 6px;
 }
